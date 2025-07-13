@@ -81,7 +81,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="w-full block bg-pink-500 text-white px-4 py-3 rounded-full hover:bg-pink-600 transition-colors font-semibold text-center"
                 >
-                  立即下单
+                  立即订购太妃糖
                 </a>
               </div>
             </div>
@@ -104,29 +104,10 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="w-full block bg-orange-500 text-white px-4 py-3 rounded-full hover:bg-orange-600 transition-colors font-semibold text-center"
                 >
-                  立即下单
+                  立即订购蛋糕
                 </a>
               </div>
             </div>
-          </div>
-          {/* 新增两个并列按钮 */}
-          <div className="flex flex-col md:flex-row gap-4 justify-center mt-12">
-            <a
-              href={orderFormUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold text-center transition-all duration-300 md:w-64"
-            >
-              立即预定蛋糕
-            </a>
-            <a
-              href={orderFormUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold text-center transition-all duration-300 md:w-64"
-            >
-              立即预定太妃糖
-            </a>
           </div>
         </div>
       </section>
