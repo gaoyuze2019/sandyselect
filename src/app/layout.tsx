@@ -48,7 +48,7 @@ export default function RootLayout({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span role="img" aria-label="wechat" className="text-2xl">🟩</span>
+            <img src="/wechat.svg" alt="微信" className="w-7 h-7" />
             <span className="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">微信ID: nana2011bj</span>
           </a>
           {/* WhatsApp */}
@@ -59,7 +59,7 @@ export default function RootLayout({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span role="img" aria-label="whatsapp" className="text-2xl">🟩</span>
+            <img src="/whatsapp.svg" alt="WhatsApp" className="w-7 h-7" />
             <span className="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">WhatsApp: +1 778-879-8016</span>
           </a>
         </div>
