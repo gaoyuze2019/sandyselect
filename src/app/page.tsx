@@ -65,11 +65,16 @@ export default function Home() {
                 <div className="text-6xl">🍬</div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">手工糖</h3>
-                <p className="text-gray-600 mb-4">2磅装，全有机食材，Whole Foods采购，加拿大包邮</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">米其林大厨Sandy亲制巴旦木太妃糖</h3>
+                <p className="text-gray-600 mb-4">
+                  米其林大厨在自己家熬1.5小时的全有机日本海藻巴旦木太妃糖，不甜不齁，老王家同款同厨同灶。<br/>
+                  75加元一盒，非常适合做伴手礼。<br/>
+                  孩子们可以迅速抢完，大人们也不需要在乎增肥，相反还可以减肥，因为吃两块中午就不饿了。<br/>
+                  <b>大厨Sandy</b>，电话 <a href="tel:+17788798016" className="underline text-pink-600">+1 778-879-8016</a>，电子邮件 <a href="mailto:jianweiwangsandy@gmail.com" className="underline text-pink-600">jianweiwangsandy@gmail.com</a>
+                </p>
                 <div className="mb-4">
-                  <span className="text-2xl font-bold text-pink-600">$150 CAD</span>
-                  <span className="text-sm text-gray-500 ml-2">包邮</span>
+                  <span className="text-2xl font-bold text-pink-600">$75 CAD</span>
+                  <span className="text-sm text-gray-500 ml-2">伴手礼首选</span>
                 </div>
                 <a
                   href={orderFormUrl}
