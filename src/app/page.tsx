@@ -70,7 +70,6 @@ export default function Home() {
                   米其林大厨在自己家熬1.5小时的全有机日本海藻巴旦木太妃糖，不甜不齁，老王家同款同厨同灶。<br/>
                   75加元一盒，非常适合做伴手礼。<br/>
                   孩子们可以迅速抢完，大人们也不需要在乎增肥，相反还可以减肥，因为吃两块中午就不饿了。<br/>
-                  <b>大厨Sandy</b>，电话 <a href="tel:+17788798016" className="underline text-pink-600">+1 778-879-8016</a>，电子邮件 <a href="mailto:jianweiwangsandy@gmail.com" className="underline text-pink-600">jianweiwangsandy@gmail.com</a>
                 </p>
                 <div className="mb-4">
                   <span className="text-2xl font-bold text-pink-600">$75 CAD</span>
