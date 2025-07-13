@@ -2,6 +2,8 @@
 
 export default function Home() {
   const orderFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdEZ5naetrjtloarPvSXpoDVoOk85XqtImDKpry81ef9aP7Qw/viewform?usp=header";
+  const toffeeFormUrl = "https://forms.gle/fake-toffee-form";
+  const cakeFormUrl = "https://forms.gle/fake-cake-form";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50">
@@ -75,14 +77,24 @@ export default function Home() {
                   <span className="text-2xl font-bold text-pink-600">$75 CAD</span>
                   <span className="text-sm text-gray-500 ml-2">伴手礼首选</span>
                 </div>
-                <a
-                  href={orderFormUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full block bg-pink-500 text-white px-4 py-3 rounded-full hover:bg-pink-600 transition-colors font-semibold text-center"
-                >
-                  立即订购太妃糖
-                </a>
+                <div className="flex flex-col md:flex-row gap-4 mt-4">
+                  <a
+                    href={toffeeFormUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-pink-500 hover:bg-pink-600 text-white px-4 py-3 rounded-full font-semibold text-center transition-colors"
+                  >
+                    立即订购太妃糖
+                  </a>
+                  <a
+                    href={cakeFormUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-full font-semibold text-center transition-colors"
+                  >
+                    立即订购蛋糕
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -98,14 +110,24 @@ export default function Home() {
                   <span className="text-2xl font-bold text-orange-600">$300 CAD</span>
                   <span className="text-sm text-gray-500 ml-2">仅限温哥华</span>
                 </div>
-                <a
-                  href={orderFormUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full block bg-orange-500 text-white px-4 py-3 rounded-full hover:bg-orange-600 transition-colors font-semibold text-center"
-                >
-                  立即订购蛋糕
-                </a>
+                <div className="flex flex-col md:flex-row gap-4 mt-4">
+                  <a
+                    href={cakeFormUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-full font-semibold text-center transition-colors"
+                  >
+                    立即订购蛋糕
+                  </a>
+                  <a
+                    href={toffeeFormUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-pink-500 hover:bg-pink-600 text-white px-4 py-3 rounded-full font-semibold text-center transition-colors"
+                  >
+                    立即订购太妃糖
+                  </a>
+                </div>
               </div>
             </div>
           </div>
