@@ -174,12 +174,12 @@ export default function Home() {
             <div className="bg-gray-50 p-6 rounded-xl">
               <div className="text-4xl mb-4">📞</div>
               <h3 className="text-xl font-semibold mb-2">电话</h3>
-              <p className="text-gray-600">+1 (604) 123-4567</p>
+              <p className="text-gray-600">+1 778-879-8016</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl">
               <div className="text-4xl mb-4">📧</div>
               <h3 className="text-xl font-semibold mb-2">邮箱</h3>
-              <p className="text-gray-600">hello@sandyselect.com</p>
+              <p className="text-gray-600">jianweiwangsandy@gmail.com</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl">
               <div className="text-4xl mb-4">📍</div>
