@@ -27,6 +27,42 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* 右侧悬浮联系方式栏 */}
+        <div className="fixed right-4 top-1/3 z-50 flex flex-col gap-4">
+          {/* 电话 */}
+          <a
+            href="tel:+17788798016"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-lg hover:bg-pink-100 transition group"
+            title="电话"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span role="img" aria-label="phone" className="text-2xl">📞</span>
+            <span className="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">+1 778-879-8016</span>
+          </a>
+          {/* 微信 */}
+          <a
+            href="weixin://dl/chat?nana2011bj"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-lg hover:bg-green-100 transition group"
+            title="微信"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span role="img" aria-label="wechat" className="text-2xl">🟩</span>
+            <span className="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">微信ID: nana2011bj</span>
+          </a>
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/17788798016"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-lg hover:bg-green-200 transition group"
+            title="WhatsApp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span role="img" aria-label="whatsapp" className="text-2xl">🟩</span>
+            <span className="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">WhatsApp: +1 778-879-8016</span>
+          </a>
+        </div>
         {children}
       </body>
     </html>
