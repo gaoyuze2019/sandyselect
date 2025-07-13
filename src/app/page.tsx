@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function Home() {
   const orderFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdEZ5naetrjtloarPvSXpoDVoOk85XqtImDKpry81ef9aP7Qw/viewform?usp=header";
 
