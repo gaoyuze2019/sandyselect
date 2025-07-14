@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -48,7 +51,7 @@ export default function RootLayout({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/wechat.svg" alt="微信" className="w-7 h-7" />
+            <i className="fa-brands fa-weixin text-3xl text-green-500"></i>
             <span className="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">微信ID: nana2011bj</span>
           </a>
           {/* WhatsApp */}
@@ -59,7 +62,7 @@ export default function RootLayout({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/whatsapp.svg" alt="WhatsApp" className="w-7 h-7" />
+            <i className="fa-brands fa-whatsapp text-3xl text-green-600"></i>
             <span className="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">WhatsApp: +1 778-879-8016</span>
           </a>
         </div>
