@@ -1,5 +1,14 @@
 "use client";
 
+import Image from "next/image";
+import logo from "../../images/logo/logo_sandyselect.png";
+import toffeeImg from "../../images/product/WechatIMG104.jpg";
+import cakeImg from "../../images/product/WechatIMG105.jpg";
+import gallery1 from "../../images/product/WechatIMG100.jpg";
+import gallery2 from "../../images/product/WechatIMG101.jpg";
+import gallery3 from "../../images/product/WechatIMG102.jpg";
+import gallery4 from "../../images/product/WechatIMG120.jpg";
+
 export default function Home() {
   const toffeeFormUrl = "https://forms.gle/fake-toffee-form";
   const cakeFormUrl = "https://forms.gle/fake-cake-form";
@@ -9,7 +18,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-800">Sandy Select</h1>
+          <Image src={logo} alt="Sandy Select" width={120} height={40} />
           <div className="flex gap-2">
             <a
               href={toffeeFormUrl}
@@ -35,6 +44,13 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-16">
         <div className="absolute inset-0 bg-gradient-to-r from-pink-400/20 to-purple-400/20"></div>
         <div className="relative z-10 text-center px-4">
+          <Image
+            src={logo}
+            alt="Sandy Select logo"
+            width={200}
+            height={80}
+            className="mx-auto mb-6"
+          />
           <h1 className="text-6xl md:text-8xl font-bold text-gray-800 mb-6">
             Sandy Select
           </h1>
@@ -74,8 +90,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Handmade Candy */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-64 bg-gradient-to-br from-pink-200 to-purple-200 flex items-center justify-center">
-                <div className="text-6xl">🍬</div>
+              <div className="relative h-64">
+                <Image src={toffeeImg} alt="巴旦木太妃糖" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">米其林大厨Sandy亲制巴旦木太妃糖</h3>
@@ -101,8 +117,8 @@ export default function Home() {
 
             {/* Premium Cake */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-64 bg-gradient-to-br from-yellow-200 to-orange-200 flex items-center justify-center">
-                <div className="text-6xl">🎂</div>
+              <div className="relative h-64">
+                <Image src={cakeImg} alt="精品蛋糕" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">精品蛋糕</h3>
@@ -152,6 +168,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Craft Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">制作与保质</h2>
+          <p className="text-gray-700 leading-relaxed text-lg">
+            巴旦木（美国大杏仁）太妃糖采用英国传统手工技艺，慢火熬制超过一小时，绝不添加香精与色素。
+            焦糖需在 <span className="font-semibold">160℃</span> 高温下制作，坚果保质期至少八个月。
+            建议置于避光阴凉处保存，夏季亦可冷藏。随着时间推移，甜度会逐渐减弱，奶香与坚果香更为突出。
+          </p>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -174,6 +202,19 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-2">零差评</h3>
               <p className="text-gray-600">开业至今保持零差评记录，客户满意度100%</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">产品照片</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <Image src={gallery1} alt="产品图1" width={300} height={200} className="rounded-xl object-cover" />
+            <Image src={gallery2} alt="产品图2" width={300} height={200} className="rounded-xl object-cover" />
+            <Image src={gallery3} alt="产品图3" width={300} height={200} className="rounded-xl object-cover" />
+            <Image src={gallery4} alt="产品图4" width={300} height={200} className="rounded-xl object-cover" />
           </div>
         </div>
       </section>
