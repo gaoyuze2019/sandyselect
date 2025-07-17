@@ -33,9 +33,26 @@ body {
 .btn-primary {
   @apply bg-brand-primary hover:bg-brand-primary/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  will-change: transform;
 }
 
 .btn-accent {
   @apply bg-brand-accent hover:bg-brand-accent/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  will-change: transform;
+}
+
+/* 性能优化 */
+* {
+  scroll-behavior: smooth;
+}
+
+/* 优化滚动性能 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 减少重绘和重排 */
+.transform, .transition-all {
+  will-change: transform;
 }

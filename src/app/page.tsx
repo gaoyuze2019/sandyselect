@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[var(--brand-background)]">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 will-change-transform">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <Image src={logo} alt="Sandy Select" width={120} height={40} />
+          <Image src={logo} alt="Sandy Select" width={120} height={40} priority className="w-auto h-8" />
           <div className="flex gap-2">
             <a
               href={toffeeFormUrl}
@@ -49,7 +49,8 @@ export default function Home() {
             alt="Sandy Select logo"
             width={200}
             height={80}
-            className="mx-auto mb-6"
+            priority
+            className="mx-auto mb-6 w-auto h-16 md:h-20"
           />
           <h1 className="text-6xl md:text-8xl font-bold text-gray-800 mb-6">
             Sandy Select
@@ -77,8 +78,8 @@ export default function Home() {
           </div>
         </div>
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-brand-primary/20 rounded-full opacity-60 animate-bounce"></div>
-        <div className="absolute bottom-20 right-10 w-16 h-16 bg-brand-accent/20 rounded-full opacity-60 animate-pulse"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-brand-primary/20 rounded-full opacity-60 animate-bounce will-change-transform"></div>
+        <div className="absolute bottom-20 right-10 w-16 h-16 bg-brand-accent/20 rounded-full opacity-60 animate-pulse will-change-transform"></div>
       </section>
 
       {/* Featured Products */}
@@ -91,7 +92,7 @@ export default function Home() {
             {/* Handmade Candy */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="relative h-64">
-                <Image src={toffeeImg} alt="巴旦木太妃糖" fill className="object-cover" />
+                <Image src={toffeeImg} alt="巴旦木太妃糖" fill className="object-cover" loading="lazy" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">米其林大厨Sandy亲制巴旦木太妃糖</h3>
@@ -118,7 +119,7 @@ export default function Home() {
             {/* Premium Cake */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="relative h-64">
-                <Image src={cakeImg} alt="精品蛋糕" fill className="object-cover" />
+                <Image src={cakeImg} alt="精品蛋糕" fill className="object-cover" loading="lazy" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">精品蛋糕</h3>
@@ -211,10 +212,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">产品照片</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            <Image src={gallery1} alt="产品图1" width={300} height={200} className="rounded-xl object-cover" />
-            <Image src={gallery2} alt="产品图2" width={300} height={200} className="rounded-xl object-cover" />
-            <Image src={gallery3} alt="产品图3" width={300} height={200} className="rounded-xl object-cover" />
-            <Image src={gallery4} alt="产品图4" width={300} height={200} className="rounded-xl object-cover" />
+            <Image src={gallery1} alt="产品图1" width={300} height={200} className="rounded-xl object-cover" loading="lazy" />
+            <Image src={gallery2} alt="产品图2" width={300} height={200} className="rounded-xl object-cover" loading="lazy" />
+            <Image src={gallery3} alt="产品图3" width={300} height={200} className="rounded-xl object-cover" loading="lazy" />
+            <Image src={gallery4} alt="产品图4" width={300} height={200} className="rounded-xl object-cover" loading="lazy" />
           </div>
         </div>
       </section>
