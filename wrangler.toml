@@ -2,7 +2,4 @@ name = "sandyselect"
 compatibility_date = "2024-01-01"
 
 [build]
-command = "npm run build"
-
-[site]
-bucket = ".next/static" 
+command = "npm run build" 
