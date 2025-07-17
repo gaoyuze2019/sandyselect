@@ -25,7 +25,7 @@ export default function Home() {
               href={toffeeFormUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-accent hover:bg-brand-accent/90 text-white px-4 py-2 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="bg-brand-accent hover:bg-brand-accent/90 text-gray-900 px-4 py-2 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               立即订购太妃糖
             </a>
@@ -64,7 +64,7 @@ export default function Home() {
               href={toffeeFormUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-accent hover:bg-brand-accent/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="bg-brand-accent hover:bg-brand-accent/90 text-gray-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               立即订购太妃糖
             </a>
@@ -110,7 +110,7 @@ export default function Home() {
                   href={toffeeFormUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full block bg-brand-accent text-white px-4 py-3 rounded-full hover:bg-brand-accent/90 transition-all duration-300 font-semibold text-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  className="w-full block bg-brand-accent text-gray-900 px-4 py-3 rounded-full hover:bg-brand-accent/90 transition-all duration-300 font-semibold text-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
                   立即订购太妃糖
                 </a>
@@ -133,7 +133,7 @@ export default function Home() {
                   href={cakeFormUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full block bg-brand-accent text-white px-4 py-3 rounded-full hover:bg-brand-accent/90 transition-all duration-300 font-semibold text-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  className="w-full block bg-brand-accent text-gray-900 px-4 py-3 rounded-full hover:bg-brand-accent/90 transition-all duration-300 font-semibold text-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
                   立即订购蛋糕
                 </a>
