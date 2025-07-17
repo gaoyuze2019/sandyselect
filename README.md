@@ -34,3 +34,5 @@ if you want a different look.
 ## Assets
 
 Product photos and the site logo are stored in the `images` directory and loaded via `next/image`.
+
+<!-- Trigger deployment for production branch update -->
