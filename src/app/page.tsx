@@ -1,5 +1,6 @@
 "use client";
 
+// Sandy Select - 米其林大厨Sandy亲手制作的高端太妃糖与蛋糕
 import Image from "next/image";
 import logo from "../../images/logo/logo_sandyselect.png";
 import toffeeImg from "../../images/product/WechatIMG104.jpg";
